@@ -162,7 +162,6 @@ BINARIES_DIR=$BUILD_DIR/binaries/$ABI
     --disable-doc \
     --disable-symver \
     --disable-postproc \
-    --disable-gpl \
     --disable-encoders \
     --disable-muxers \
     --disable-bsfs \
