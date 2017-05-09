@@ -200,6 +200,7 @@ As we all know for mass production **is enough** to have *armeabi-v7a* (the most
 As `build.sh` script I *can*:
  - ffmpeg for armeabi, armeabi-v7a, x86;
  - openssl for armeabi, armeabi-v7a, arm64-v8a, mips, x86;
+
 As `build.sh` script I *can't* (but I tried):
  - ffmpeg for arm64-v8a, x86_64, mips;
  - openssl for x86_64 and other;
