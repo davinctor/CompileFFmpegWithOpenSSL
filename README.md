@@ -187,15 +187,22 @@ A bunch of script you can use to compile ffmpeg with openssl
 2. https://github.com/wseemann/FFmpegMediaPlayer (old version of 1-st point)
 3. https://github.com/wseemann/ServeStream
 4. https://github.com/cine-io/android-ffmpeg-with-rtmp (It was my first target to compile, but this script compile only to armeabi-v7a)
-5. https://github.com/WritingMinds/ffmpeg-android-java (Wrapper around FFMPEG(.so) and calling ffmpeg through the terminal)
-6. https://github.com/WritingMinds/ffmpeg-android (Another one compilation build script for ffmpeg with a lot of additional libs)
-7. https://github.com/OnlyInAmerica/FFmpeg-Android (Deprecated, but useful)
-8. https://github.com/appunite/AndroidFFmpeg (Compile with sample)
-9. https://github.com/havlenapetr/FFMpeg (Sample ffmpeg for android - wrapper for all ffmpeg classes)
+5. https://github.com/WritingMinds/ffmpeg-android-java (A wrapper around FFMPEG(.so) and calling ffmpeg through the terminal)
+6. https://github.com/WritingMinds/ffmpeg-android (Another one compilation script for ffmpeg with a lot of additional libs)
+7. https://github.com/OnlyInAmerica/FFmpeg-Android (deprecated, but useful)
+8. https://github.com/appunite/AndroidFFmpeg (a compilation script with sample)
+9. https://github.com/havlenapetr/FFMpeg (A sample ffmpeg for android - wrapper for all ffmpeg classes)
 
 # P.S.
-The status of compilation - at begin of MAY 2017 with using NDK version r14b FFMPEG compilation fails for `x86_64, mips, arm64-v8a ABI`, and OPENSSL fails for `x86_64`.
-
+The status of compilation - at begin of MAY 2017 with using NDK version r14b FFMPEG compilation fails for `x86_64, mips, arm64-v8a`, and OPENSSL fails for `x86_64`. 
+As we all know for mass production **is enough** to have *armeabi-v7a* (the most polular architecture, other arm-based processors can work with it) and x86 (around 2 percent of all android devices). So I don't stuck with other architectures, and I guess that using older one version of NDK, for example, one of NDK r12 can fix the problem for some architectures.
+**Summary**
+As `build.sh` script I *can*:
+ - ffmpeg for armeabi, armeabi-v7a, x86;
+ - openssl for armeabi, armeabi-v7a, arm64-v8a, mips, x86;
+As `build.sh` script I *can't* (but I tried):
+ - ffmpeg for arm64-v8a, x86_64, mips;
+ - openssl for x86_64 and other;
 
 # License
 ```
