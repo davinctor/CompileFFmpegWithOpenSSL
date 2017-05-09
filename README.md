@@ -2,7 +2,7 @@
 A bunch of script you can use to compile ffmpeg with openssl
 
 # Environment
-1. Linux (At that time I used Linux Mint 18.1 Serena `MATE 64-bit`)
+1. Linux (At that time I used Linux Mint 18.1 Serena MATE 64-bit)
 2. Android NDK r14b
 3. Internet
 
