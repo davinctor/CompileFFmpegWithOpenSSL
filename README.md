@@ -41,11 +41,11 @@ A bunch of script you can use to compile ffmpeg with openssl
 					→ libswresample
 					→ libswscale
 				→ x86
-				→ (Like inside armeabi-v7a folder)
-			→ armeabi
-				→ (Like inside armeabi-v7a folder)
-			→ arm64-v8a
-				→ (Like inside armeabi-v7a folder)
+					→ (Like inside armeabi-v7a folder)
+				→ armeabi
+					→ (Like inside armeabi-v7a folder)
+				→ arm64-v8a
+					→ (Like inside armeabi-v7a folder)
 			→ binaries
 				→ armeabi-v7a
 					→  libavcodec-57.so
@@ -59,126 +59,126 @@ A bunch of script you can use to compile ffmpeg with openssl
 					→ libavutil-55.so
 					→ libavutil.so -> libavutil-55.so
 				→ x86
-				→ (Like inside armeabi-v7a folder)
-			→ armeabi
-				→ (Like inside armeabi-v7a folder)
-			→ arm64-v8a
-				→ (Like inside armeabi-v7a folder)
+					→ (Like inside armeabi-v7a folder)
+				→ armeabi
+					→ (Like inside armeabi-v7a folder)
+				→ arm64-v8a
+					→ (Like inside armeabi-v7a folder)
 			→ lib
-		→ libavcodec
-			→ armeabi-v7a 
-					→  libavcodec-57.so
-				→  libavcodec.so -> libavcodec-57.so
-			→ x86
-					→ (Like inside armeabi-v7a folder)
-				→ armeabi
-					→ (Like inside armeabi-v7a folder)
-				→ arm64-v8a
-					→ (Like inside armeabi-v7a folder)
-		→ libavdevice
-			→ armeabi-v7a 
-				→  libavdevice-57.so
-				→  libavdevice.so -> libavdevice-57.so
-			→ x86
-					→ (Like inside armeabi-v7a folder)
-				→ armeabi
-					→ (Like inside armeabi-v7a folder)
-				→ arm64-v8a
-					→ (Like inside armeabi-v7a folder)
+				→ libavcodec
+					→ armeabi-v7a 
+						→  libavcodec-57.so
+						→  libavcodec.so -> libavcodec-57.so
+					→ x86
+						→ (Like inside armeabi-v7a folder)
+					→ armeabi
+						→ (Like inside armeabi-v7a folder)
+					→ arm64-v8a
+						→ (Like inside armeabi-v7a folder)
+				→ libavdevice
+					→ armeabi-v7a 
+						→  libavdevice-57.so
+						→  libavdevice.so -> libavdevice-57.so
+					→ x86
+						→ (Like inside armeabi-v7a folder)
+					→ armeabi
+						→ (Like inside armeabi-v7a folder)
+					→ arm64-v8a
+						→ (Like inside armeabi-v7a folder)
 
-		→ libavfilter
-			→ armeabi-v7a
-				→  libavfilter-6.so
-				→ libavfilter.so -> libavfilter-6.so
-			→ x86
+				→ libavfilter
+					→ armeabi-v7a
+						→  libavfilter-6.so
+						→ libavfilter.so -> libavfilter-6.so
+					→ x86
+						→ (Like inside armeabi-v7a folder)
+					→ armeabi
+						→ (Like inside armeabi-v7a folder)
+					→ arm64-v8a
+						→ (Like inside armeabi-v7a folder)
+				→ libavformat
+					→ armeabi-v7a
+						→ libavformat-57.so
+						→ libavformat.so -> libavformat-57.so
+					→ x86
+						→ (Like inside armeabi-v7a folder)
+					→ armeabi
+						→ (Like inside armeabi-v7a folder)
+					→ arm64-v8a
+						→ (Like inside armeabi-v7a folder)
+				→ libavutil
+					→ armeabi-v7a
+						→ libavutil-55.so
+						→ libavutil.so -> libavutil-55.so
+					→ x86
+						→ (Like inside armeabi-v7a folder)
+					→ armeabi
+						→ (Like inside armeabi-v7a folder)
+					→ arm64-v8a
+						→ (Like inside armeabi-v7a folder)
+				→ libswresample
+					→ armeabi-v7a
+						→ libswresample-2.so
+						→ libswresample.so -> libswresample-2.so
+					→ x86
+						→ (Like inside armeabi-v7a folder)
+					→ armeabi
+						→ (Like inside armeabi-v7a folder)
+					→ arm64-v8a
+						→ (Like inside armeabi-v7a folder)
+				→ libswscale
+					→ armeabi-v7a
+						→ libswscale-4.so
+						→ libswscale.so -> libswscale-4.so
+					→ x86
+						→ (Like inside armeabi-v7a folder)
+					→ armeabi
+						→ (Like inside armeabi-v7a folder)
+					→ arm64-v8a
+						→ (Like inside armeabi-v7a folder)
+		→ openssl (libs/openssl)
+			→ build
+				→ armeabi-v7a
+					→ bin
+					→ certs
+					→ include
+						→ openssl
+					→ lib
+						→ engines
+						→ libcrypto.a
+						→ libscrypto.so
+						→ libssl.a
+						→ libssl.so
+						→ link_shared
+						→ pkg-config
+					→ misc
+					→ private
+					→ openssl.cnf
+				→ x86
 					→ (Like inside armeabi-v7a folder)
 				→ armeabi
 					→ (Like inside armeabi-v7a folder)
 				→ arm64-v8a
 					→ (Like inside armeabi-v7a folder)
-		→ libavformat
-			→ armeabi-v7a
-				→ libavformat-57.so
-				→ libavformat.so -> libavformat-57.so
-			→ x86
-					→ (Like inside armeabi-v7a folder)
-				→ armeabi
-					→ (Like inside armeabi-v7a folder)
-				→ arm64-v8a
-					→ (Like inside armeabi-v7a folder)
-		→ libavutil
-			→ armeabi-v7a
-				→ libavutil-55.so
-				→ libavutil.so -> libavutil-55.so
-			→ x86
-					→ (Like inside armeabi-v7a folder)
-				→ armeabi
-					→ (Like inside armeabi-v7a folder)
-				→ arm64-v8a
-					→ (Like inside armeabi-v7a folder)
-		→ libswresample
-			→ armeabi-v7a
-				→ libswresample-2.so
-				→ libswresample.so -> libswresample-2.so
-			→ x86
-					→ (Like inside armeabi-v7a folder)
-				→ armeabi
-					→ (Like inside armeabi-v7a folder)
-				→ arm64-v8a
-					→ (Like inside armeabi-v7a folder)
-		→ libswscale
-			→ armeabi-v7a
-				→ libswscale-4.so
-				→ libswscale.so -> libswscale-4.so
-			→ x86
-				→ (Like inside armeabi-v7a folder)
-			→ armeabi
-				→ (Like inside armeabi-v7a folder)
-			→ arm64-v8a
-				→ (Like inside armeabi-v7a folder)
-	→ openssl (libs/openssl)
-		→ build
-			→ armeabi-v7a
-				→ bin
-				→ certs
-				→ include
+			→ include
+				→ armeabi-v7a
 					→ openssl
-				→ lib
-					→ engines
-					→ libcrypto.a
-					→ libscrypto.so
-					→ libssl.a
+ 				→ x86
+					→ (Like inside armeabi-v7a folder)
+				→ armeabi
+					→ (Like inside armeabi-v7a folder)
+				→ arm64-v8a
+					→ (Like inside armeabi-v7a folder)
+			→ lib
+				→ armeabi-v7a
 					→ libssl.so
-					→ link_shared
-					→ pkg-config
-				→ misc
-				→ private
-				→ openssl.cnf
-			→ x86
-				→ (Like inside armeabi-v7a folder)
-			→ armeabi
-				→ (Like inside armeabi-v7a folder)
-			→ arm64-v8a
-				→ (Like inside armeabi-v7a folder)
-		→ include
-			→ armeabi-v7a
-				→ openssl
- 			→ x86
-				→ (Like inside armeabi-v7a folder)
-			→ armeabi
-				→ (Like inside armeabi-v7a folder)
-			→ arm64-v8a
-				→ (Like inside armeabi-v7a folder)
-		→ lib
-			→ armeabi-v7a
-				→ libssl.so
-				→ libcrypto.so
- 			→ x86
-				→ (Like inside armeabi-v7a folder)
-			→ armeabi
-				→ (Like inside armeabi-v7a folder)
-			→ arm64-v8a
-				→ (Like inside armeabi-v7a folder)
+					→ libcrypto.so
+ 				→ x86
+					→ (Like inside armeabi-v7a folder)
+				→ armeabi
+					→ (Like inside armeabi-v7a folder)
+				→ arm64-v8a
+					→ (Like inside armeabi-v7a folder)
 
 ```
 
