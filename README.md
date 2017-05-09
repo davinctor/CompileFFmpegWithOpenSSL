@@ -207,7 +207,16 @@ As `build.sh` script I *can't* (but I tried):
  - ffmpeg for arm64-v8a, x86_64, mips;
  - openssl for x86_64 and other;
 
+# License FFMPEG
+
+Check [LICENSE.GPLv3](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) and make sure to follow the licensing terms and conditions of the project and the software used to build the project.
+
+# License OpenSSL
+
+Check [license](https://www.openssl.org/source/license.html) and make sure to follow the licensing terms and conditions of the project and the software used to build the project.
+
 # License
+
 ```
 MIT License
 
