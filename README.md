@@ -1,5 +1,5 @@
-# compile-ffmpeg-with-openssl
-A bunch of script you can use to compile ffmpeg with openssl
+# About
+A bunch of script you can use to compile FFmpeg with OpenSSL
 
 # Environment
 1. Linux (At that time I used Linux Mint 18.1 Serena MATE 64-bit)
@@ -16,17 +16,17 @@ A bunch of script you can use to compile ffmpeg with openssl
 # Output folder structure
 ```
 ~/AndroidStudioProjects/compile-ffmpeg-and-openssl/
-	→ build.sh (the main compilation script for both ffmpeg and openssl)
-	→ _build_ffmpeg.sh (ffmpeg compilation script)
-	→ _build_openssl.sh (openssl compilation script)
-	→ _old_build_ffmpeg.sh (ffmpeg compilation script for only armeabi architecture)
-	→ _old_build_openssl.sh (openssl 1.0.0a compilation script)
-	→ Setenv-android.sh (set up environment (variables, etc) for openssl compilation, runs inside _build_openssl.sh)
+	→ build.sh (the main compilation script for both FFmpeg and OpenSSL)
+	→ _build_ffmpeg.sh (FFmpeg compilation script)
+	→ _build_openssl.sh (OpenSSL compilation script)
+	→ _old_build_ffmpeg.sh (FFmpeg compilation script for only armeabi architecture)
+	→ _old_build_openssl.sh (OpenSSL 1.0.0a compilation script)
+	→ Setenv-android.sh (set up environment (variables, etc) for OpenSSL compilation, runs inside _build_openssl.sh)
 	→ patches
-		→ patch_fix_ffmpeg_lib_name.txt (the patch file to fix ffmpeg libs name suffix)
+		→ patch_fix_ffmpeg_lib_name.txt (the patch file to fix FFmpeg libs name suffix)
 	→ src
-		→ ffmpeg-android (ffmpeg sources)
-		→ openssl-android (openssl sources)
+		→ ffmpeg-android (FFmpeg sources)
+		→ openssl-android (OpenSSL sources)
 		→ ffmpeg-3.3tar.bz2
 		→ openssl-1.0.2j.tar.gz
 	→ libs (folder with compiled libs)
@@ -187,27 +187,27 @@ A bunch of script you can use to compile ffmpeg with openssl
 2. https://github.com/wseemann/FFmpegMediaPlayer (old version of 1-st point)
 3. https://github.com/wseemann/ServeStream
 4. https://github.com/cine-io/android-ffmpeg-with-rtmp (It was my first target to compile, but this script compile only to armeabi-v7a)
-5. https://github.com/WritingMinds/ffmpeg-android-java (A wrapper around FFMPEG(.so) and calling ffmpeg through the terminal)
-6. https://github.com/WritingMinds/ffmpeg-android (Another one compilation script for ffmpeg with a lot of additional libs)
+5. https://github.com/WritingMinds/ffmpeg-android-java (A wrapper around FFmpeg(.so) and calling FFmpeg through the terminal)
+6. https://github.com/WritingMinds/ffmpeg-android (Another one compilation script for FFmpeg with a lot of additional libs)
 7. https://github.com/OnlyInAmerica/FFmpeg-Android (deprecated, but useful)
 8. https://github.com/appunite/AndroidFFmpeg (a compilation script with sample)
-9. https://github.com/havlenapetr/FFMpeg (A sample ffmpeg for android - wrapper for all ffmpeg classes)
+9. https://github.com/havlenapetr/FFMpeg (A sample FFmpeg for android - wrapper for all FFmpeg classes)
 
 # P.S.
-The status of compilation - at begin of MAY 2017 with using NDK version r14b FFMPEG compilation fails for `x86_64, mips, arm64-v8a`, and OPENSSL fails for `x86_64`. 
+The status of compilation - at begin of MAY 2017 with using NDK version r14b FFmpeg compilation fails for `x86_64, mips, arm64-v8a`, and OpenSSL fails for `x86_64`. 
 As we all know for mass production **is enough** to have *armeabi-v7a* (the most polular architecture, other arm-based processors can work with it) and x86 (around 2 percent of all android devices). So I don't stuck with other architectures, and I guess that using older one version of NDK, for example, one of NDK r12 can fix the problem for some architectures.
 
 **Summary**
 
 As `build.sh` script I *can*:
- - ffmpeg for armeabi, armeabi-v7a, x86;
- - openssl for armeabi, armeabi-v7a, arm64-v8a, mips, x86;
+ - FFmpeg for armeabi, armeabi-v7a, x86;
+ - OpenSSL for armeabi, armeabi-v7a, arm64-v8a, mips, x86;
 
 As `build.sh` script I *can't* (but I tried):
- - ffmpeg for arm64-v8a, x86_64, mips;
- - openssl for x86_64 and other;
+ - FFmpeg for arm64-v8a, x86_64, mips;
+ - OpenSSL for x86_64 and other;
 
-# License FFMPEG
+# License FFmpeg
 
 Check [LICENSE.GPLv3](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) and make sure to follow the licensing terms and conditions of the project and the software used to build the project.
 
