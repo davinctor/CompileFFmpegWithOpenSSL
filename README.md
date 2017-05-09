@@ -196,7 +196,9 @@ A bunch of script you can use to compile ffmpeg with openssl
 # P.S.
 The status of compilation - at begin of MAY 2017 with using NDK version r14b FFMPEG compilation fails for `x86_64, mips, arm64-v8a`, and OPENSSL fails for `x86_64`. 
 As we all know for mass production **is enough** to have *armeabi-v7a* (the most polular architecture, other arm-based processors can work with it) and x86 (around 2 percent of all android devices). So I don't stuck with other architectures, and I guess that using older one version of NDK, for example, one of NDK r12 can fix the problem for some architectures.
+
 **Summary**
+
 As `build.sh` script I *can*:
  - ffmpeg for armeabi, armeabi-v7a, x86;
  - openssl for armeabi, armeabi-v7a, arm64-v8a, mips, x86;
